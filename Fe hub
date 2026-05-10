@@ -78,3 +78,4 @@ Rayfield:Notify({
    Image = 4483362458,
 })
 
+local Label = MainTab:CreateLabel("in beta!!", 7057923079, Color3.fromRGB(255, 255, 255), false)
