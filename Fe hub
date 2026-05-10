@@ -78,11 +78,41 @@ Rayfield:Notify({
    Image = 4483362458,
 })
 
-local Tab = Window:CreateTab("misc", 4483362458) -- Title, Image
+local miscTab = Window:CreateTab("misc", 4483362458)
 
 local Button = miscTab:CreateButton({
    Name = "iy",
    Callback = function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Button = miscTab:CreateButton({
+   Name = "esp",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+   end,
+})
+
+local Button = miscTab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+   end,
+})
+
+local Button = miscTab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local backdoorTab = Window:CreateTab("backdoor", 4483362458) -- Title, Image
+
+local Button = backdoorTab:CreateButton({
+   Name = "snytex backdoor scanner",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SYNTEX-BACKDOOR-SCANNER-172434"))()
    end,
 })
