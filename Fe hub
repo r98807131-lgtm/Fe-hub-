@@ -78,4 +78,11 @@ Rayfield:Notify({
    Image = 4483362458,
 })
 
-local Label = MainTab:CreateLabel("in beta!!", 7057923079, Color3.fromRGB(255, 255, 255), false)
+local Tab = Window:CreateTab("misc", 4483362458) -- Title, Image
+
+local Button = miscTab:CreateButton({
+   Name = "iy",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
